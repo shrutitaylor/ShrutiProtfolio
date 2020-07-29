@@ -1,2 +1,1 @@
-# my_portfolio
-Created with CodeSandbox
+## My Portfolio
