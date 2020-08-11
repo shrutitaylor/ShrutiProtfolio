@@ -1,15 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import Intro from "./componets/main/Intro";
+import AboutMe from "./componets/main/AboutMe";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.video = React.createRef();
-  }
+class Main extends Component {
   render() {
-    return <h1>My Portfolio</h1>;
+    return (
+      <section>
+        <Intro />
+        <AboutMe />
+      </section>
+    );
   }
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Main />, rootElement);
