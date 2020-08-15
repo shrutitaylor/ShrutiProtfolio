@@ -1,26 +1,27 @@
 import React from "react";
 
-const MainProject = () => {
+const MainProject = (props) => {
+  const { projectLink, mainTitle, secondTitle, technologies, gitHub } = props;
+
+  // Render technologies from index.js script
+  const tech = technologies.map((tech, index) => <li key={index}>{tech}</li>);
+
   return (
     <section className="main main-Projects">
-      <a href="link" class="img-container">
-        {"link"}
+      <a href={projectLink} className="img-container">
+        {projectLink}
       </a>
       <div className="left-container">
-        <h4>{"title"}</h4>
-        <h5>{"Big title"}</h5>
+        <h4>{secondTitle}</h4>
+        <h5>{mainTitle}</h5>
         <div className="text-content"></div>
-        <ul className="technologies">
-          <li>List 1</li>
-          <li>List 2</li>
-          <li>List 3</li>
-        </ul>
+        <ul className="technologies">{tech}</ul>
         <div className="links-feature">
           <a className="git-hub" href="links-feature">
-            {"link feature"}
+            {gitHub}
           </a>
           <a className="external-link" href="link-feature 2">
-            {"link feature 2"}
+            {projectLink}
           </a>
         </div>
       </div>

@@ -14,7 +14,27 @@ class Main extends Component {
         <Intro />
         <AboutMe />
         <Experience />
-        <MainProject />
+        <MainProject
+          projectLink="test"
+          mainTitle="Project1"
+          secondTitle="Project2"
+          technologies={["rex", "rex2", "rex3"]}
+          gitHub="githubLink"
+        />
+        <MainProject
+          projectLink="test2"
+          mainTitle="Project2"
+          secondTitle="Project3"
+          technologies={["rex", "rex2", "rex3"]}
+          gitHub="githubLink"
+        />
+        <MainProject
+          projectLink="test4"
+          mainTitle="Project4"
+          secondTitle="Project4"
+          technologies={["rex", "rex2", "rex3"]}
+          gitHub="githubLink"
+        />
       </section>
     );
   }
