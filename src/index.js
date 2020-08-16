@@ -4,6 +4,7 @@ import Intro from "../componets/main/Intro";
 import AboutMe from "../componets/main/AboutMe";
 import Experience from "../componets/main/Experience";
 import MainProject from "../componets/main/MainProject";
+import GetInTouch from "../componets/main/GetInTouch";
 
 import "./styles.css";
 
@@ -35,6 +36,7 @@ class Main extends Component {
           technologies={["rex", "rex2", "rex3"]}
           gitHub="githubLink"
         />
+        <GetInTouch />
       </section>
     );
   }
