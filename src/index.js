@@ -7,6 +7,7 @@ import Experience from "../componets/main/Experience";
 import MainProject from "../componets/main/MainProject";
 import GetInTouch from "../componets/main/GetInTouch";
 import Footer from "../componets/main/Footer";
+import Fade from "react-reveal/Fade";
 
 import "./styles.css";
 
@@ -16,32 +17,42 @@ class Main extends Component {
       <React.Fragment>
         <Nav />
         <section>
-          <Intro />
-          <AboutMe id="about" />
-          <Experience id="experience" />
-          <MainProject
-            id="projects"
-            projectLink="test"
-            mainTitle="Project1"
-            secondTitle="Project2"
-            technologies={["rex", "rex2", "rex3"]}
-            gitHub="githubLink"
-          />
-          <MainProject
-            projectLink="test2"
-            mainTitle="Project2"
-            secondTitle="Project3"
-            technologies={["rex", "rex2", "rex3"]}
-            gitHub="githubLink"
-          />
-          <MainProject
-            projectLink="test4"
-            mainTitle="Project4"
-            secondTitle="Project4"
-            technologies={["rex", "rex2", "rex3"]}
-            gitHub="githubLink"
-          />
-          <GetInTouch id="contact" />
+          <Fade right>
+            <Intro />
+          </Fade>
+          <Fade left>
+            <AboutMe id="about" />
+          </Fade>
+          <Fade right>
+            <Experience id="experience" />
+          </Fade>
+          <Fade left>
+            <MainProject
+              id="projects"
+              projectLink="test"
+              mainTitle="Project1"
+              secondTitle="Project2"
+              technologies={["rex", "rex2", "rex3"]}
+              gitHub="githubLink"
+            />
+            <MainProject
+              projectLink="test2"
+              mainTitle="Project2"
+              secondTitle="Project3"
+              technologies={["rex", "rex2", "rex3"]}
+              gitHub="githubLink"
+            />
+            <MainProject
+              projectLink="test4"
+              mainTitle="Project4"
+              secondTitle="Project4"
+              technologies={["rex", "rex2", "rex3"]}
+              gitHub="githubLink"
+            />
+          </Fade>
+          <Fade right>
+            <GetInTouch id="contact" />
+          </Fade>
           <Footer />
         </section>
       </React.Fragment>
