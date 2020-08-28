@@ -17,9 +17,10 @@ class Main extends Component {
         <Nav />
         <section>
           <Intro />
-          <AboutMe />
-          <Experience />
+          <AboutMe id="about" />
+          <Experience id="experience" />
           <MainProject
+            id="projects"
             projectLink="test"
             mainTitle="Project1"
             secondTitle="Project2"
@@ -40,7 +41,7 @@ class Main extends Component {
             technologies={["rex", "rex2", "rex3"]}
             gitHub="githubLink"
           />
-          <GetInTouch />
+          <GetInTouch id="contact" />
           <Footer />
         </section>
       </React.Fragment>

@@ -1,8 +1,8 @@
 import React from "react";
 
-const GetInTouch = () => {
+const GetInTouch = (props) => {
   return (
-    <section className="main get-in-touch">
+    <section className="main get-in-touch" id={props.id}>
       <h4>Get In Touch</h4>
       <p>
         Friendship contrasted solicitude insipidity in introduced literature it.
@@ -12,7 +12,7 @@ const GetInTouch = () => {
         href="random mail"
         target="_blank"
         rel="nofollow noopener noreferrer"
-        class="onctact_button"
+        className="onctact_button"
       >
         Say Hello
       </a>

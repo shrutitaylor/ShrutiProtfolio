@@ -1,8 +1,8 @@
 import React from "react";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
   return (
-    <section className="main about_me">
+    <section className="main about_me" id={props.id}>
       <div className="about_title">
         <h3>About Me</h3>
       </div>

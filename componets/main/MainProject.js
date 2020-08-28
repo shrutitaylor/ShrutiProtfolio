@@ -7,7 +7,7 @@ const MainProject = (props) => {
   const tech = technologies.map((tech, index) => <li key={index}>{tech}</li>);
 
   return (
-    <section className="main main-Projects">
+    <section className="main main-Projects" id={props.id}>
       <a href={projectLink} className="img-container">
         {projectLink}
       </a>
