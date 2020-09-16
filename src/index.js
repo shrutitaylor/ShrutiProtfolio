@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import Aside from "../componets/main/Aside";
 import Nav from "../componets/main/Nav";
 import Intro from "../componets/main/Intro";
 import AboutMe from "../componets/main/AboutMe";
@@ -32,6 +33,7 @@ class Main extends Component {
           <li></li>
           <li></li>
         </ul>
+        <Aside class={menuIsOpen ? "open" : "close"} />
         <Nav class={menuIsOpen ? "open" : "close"} />
         <section>
           <Fade right>

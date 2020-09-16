@@ -64,3 +64,46 @@ ol {
   -ms-transform: rotate(-45deg) translate(16px, -10px);
   transform: rotate(-45deg) translate(16px, -10px);
 }
+
+/* Aside */
+aside {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: min(75vw, 400px);
+  height: 100vh;
+  z-index: 10;
+  outline: 0px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transform: translateX(100vw);
+  visibility: visible;
+}
+
+aside.open {
+  transform: translatex(0vw);
+}
+
+aside .aside-content {
+  padding: 50px;
+  height: 100%;
+  position: relative;
+  background-color: rgb(23, 42, 69);
+}
+
+aside .aside-content ol {
+  width: 100%;
+  padding-top: 20vh;
+}
+
+aside .aside-content ol li {
+  color: #ccd6f6;
+  font-size: 25px;
+  font-family: Roboto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+aside .aside-content ol li:hover {
+  cursor: pointer;
+}
