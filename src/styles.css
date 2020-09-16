@@ -1,3 +1,13 @@
+/* General Section */
+body {
+  background-color: #020c1b;
+}
+
+ol {
+  list-style: none;
+}
+
+/* Experience Section */
 .jss92 {
   height: 145px;
   display: flex;
@@ -7,4 +17,50 @@
 
 .jss93 {
   border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Hamburger-button Section */
+.hamburger-button {
+  list-style: none;
+  margin-top: 30px;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  z-index: 30;
+}
+
+.hamburger-button li {
+  height: 4px;
+  margin: 8px auto;
+  background-color: #64ffda;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.hamburger-button li:nth-child(1) {
+  width: 42px;
+}
+.hamburger-button li:nth-child(2) {
+  width: 32px;
+}
+.hamburger-button li:nth-child(3) {
+  width: 20px;
+}
+
+.hamburger-button.open li:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(8px, 12px);
+  -ms-transform: rotate(45deg) translate(8px, 12px);
+  transform: rotate(45deg) translate(8px, 12px);
+}
+
+.hamburger-button.open li:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translate(-12px, -1.5px);
+  -ms-transform: rotate(-45deg) translate(-12px, -1.5px);
+  transform: rotate(-45deg) translate(-10px, -1.5px);
+}
+
+.hamburger-button.open li:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(16px, -10px);
+  -ms-transform: rotate(-45deg) translate(16px, -10px);
+  transform: rotate(-45deg) translate(16px, -10px);
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <header>
-      <nav>
+      <nav className={props.class}>
         <a href="/" aria-label="home">
           Logo
         </a>

@@ -12,10 +12,27 @@ import Fade from "react-reveal/Fade";
 import "./styles.css";
 
 class Main extends Component {
+  state = { menuIsOpen: false };
+
+  toggleMenu = () => {
+    this.setState({ menuIsOpen: !this.state.menuIsOpen });
+  };
+
   render() {
+    const menuIsOpen = this.state.menuIsOpen;
     return (
       <React.Fragment>
-        <Nav />
+        <ul
+          className={
+            menuIsOpen ? "open hamburger-button" : "close hamburger-button"
+          }
+          onClick={this.toggleMenu}
+        >
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <Nav class={menuIsOpen ? "open" : "close"} />
         <section>
           <Fade right>
             <Intro />
