@@ -13,7 +13,34 @@ import Fade from "react-reveal/Fade";
 import "./styles.css";
 
 class Main extends Component {
-  state = { menuIsOpen: false };
+  constructor(props) {
+    super(props);
+    this.wrapperAside = React.createRef();
+    this.wrapperHamburgerButton = React.createRef();
+    this.state = { menuIsOpen: false };
+  }
+
+  handleClickOutside = (event) => {
+    console.log(this.wrapperAside);
+    if (
+      this.wrapperAside &&
+      !this.wrapperAside.current.contains(event.target)
+    ) {
+      if (this.state.menuIsOpen) {
+        if (!this.wrapperHamburgerButton.current.contains(event.target)) {
+          this.toggleMenu();
+        }
+      }
+    }
+  };
+
+  componentDidMount() {
+    document.addEventListener("mousedown", this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("mousedown", this.handleClickOutside);
+  }
 
   toggleMenu = () => {
     this.setState({ menuIsOpen: !this.state.menuIsOpen });
@@ -24,6 +51,7 @@ class Main extends Component {
     return (
       <React.Fragment>
         <ul
+          ref={this.wrapperHamburgerButton}
           className={
             menuIsOpen ? "open hamburger-button" : "close hamburger-button"
           }
@@ -33,7 +61,7 @@ class Main extends Component {
           <li></li>
           <li></li>
         </ul>
-        <Aside class={menuIsOpen ? "open" : "close"} />
+        <Aside ref={this.wrapperAside} class={menuIsOpen ? "open" : "close"} />
         <Nav class={menuIsOpen ? "open" : "close"} />
         <section>
           <Fade right>

@@ -23,7 +23,7 @@ ol {
 .hamburger-button {
   list-style: none;
   margin-top: 30px;
-  position: absolute;
+  position: fixed;
   right: 0;
   width: 100px;
   z-index: 30;
@@ -71,7 +71,7 @@ aside {
   top: 0px;
   bottom: 0px;
   right: 0px;
-  width: min(75vw, 400px);
+  width: min(70vw, 400px);
   height: 100vh;
   z-index: 10;
   outline: 0px;

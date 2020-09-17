@@ -1,8 +1,8 @@
 import React from "react";
 
-const Aside = (props) => {
+const Aside = React.forwardRef((props, ref) => {
   return (
-    <aside className={props.class}>
+    <aside ref={ref} className={props.class}>
       <div className="aside-content">
         <ol>
           <li>About</li>
@@ -13,6 +13,6 @@ const Aside = (props) => {
       </div>
     </aside>
   );
-};
+});
 
 export default Aside;
