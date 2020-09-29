@@ -17,7 +17,7 @@ const Nav = (props) => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={0}
+                offset={-70}
               >
                 About
               </Link>
@@ -29,7 +29,7 @@ const Nav = (props) => {
                 smooth={true}
                 spy={true}
                 duration={500}
-                offset={0}
+                offset={-70}
               >
                 Experience
               </Link>
@@ -41,7 +41,7 @@ const Nav = (props) => {
                 smooth={true}
                 spy={true}
                 duration={500}
-                offset={0}
+                offset={-70}
               >
                 Projects
               </Link>
@@ -53,7 +53,7 @@ const Nav = (props) => {
                 smooth={true}
                 spy={true}
                 duration={500}
-                offset={0}
+                offset={-70}
               >
                 Contact
               </Link>
