@@ -50,19 +50,21 @@ class Main extends Component {
     const menuIsOpen = this.state.menuIsOpen;
     return (
       <React.Fragment>
-        <ul
-          ref={this.wrapperHamburgerButton}
-          className={
-            menuIsOpen ? "open hamburger-button" : "close hamburger-button"
-          }
-          onClick={this.toggleMenu}
-        >
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div className="hamburger-content">
+          <ul
+            ref={this.wrapperHamburgerButton}
+            className={
+              menuIsOpen ? "open hamburger-button" : "close hamburger-button"
+            }
+            onClick={this.toggleMenu}
+          >
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         <Aside ref={this.wrapperAside} class={menuIsOpen ? "open" : "close"} />
-        <Nav class={menuIsOpen ? "open" : "close"} />
+        <Nav />
         <section>
           <Fade right>
             <Intro />

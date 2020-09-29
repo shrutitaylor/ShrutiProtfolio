@@ -1,31 +1,132 @@
-/* General Section */
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* -- Css reset */
+
+/* General Css rules */
 body {
   background-color: #020c1b;
+  font-family: "Roboto Mono", monospace;
+  color: #8892b0;
 }
 
-ol {
+section {
+  margin-top: 80px;
+}
+
+ol,
+ul {
   list-style: none;
 }
+/* -- General Css rules */
 
-/* Experience Section */
-.jss92 {
-  height: 145px;
+/* HEADER */
+/* Breack point 1000px; */
+
+header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(10, 25, 47, 1);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  padding: 10px 40px;
+}
+
+header nav {
   display: flex;
-  flex-grow: 1;
-  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.jss93 {
-  border-right: 1px solid rgba(0, 0, 0, 0.12);
+header nav .logo {
+  display: inline-block;
+  color: #64ffda;
+  text-decoration: none;
+  font-size: 30px;
+  border: 1px solid #64ffda;
+  border-radius: 50%;
+  padding: 5px 15px;
+  margin-right: 30px;
 }
+
+header nav .nav {
+  display: none;
+}
+
+header nav .nav a {
+  color: #8892b0;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  header nav .nav {
+    display: inline-block;
+  }
+}
+
+header nav .nav a:hover {
+  cursor: pointer;
+  color: #64ffda;
+}
+
+header nav .nav .nav-list {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+header nav .nav .nav-list a {
+  display: inline-block;
+}
+
+header nav .nav .nav-list li {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #8892b0;
+}
+
+header nav .nav .nav-list li:hover {
+  cursor: pointer;
+  color: #64ffda;
+}
+
+/* -- HEADER */
 
 /* Hamburger-button Section */
+.hamburger-content {
+  display: inline-block;
+  position: fixed;
+  z-index: 25;
+  top: 10px;
+}
+
+@media (min-width: 800px) {
+  .hamburger-content {
+    display: none;
+  }
+}
+
 .hamburger-button {
   list-style: none;
-  margin-top: 30px;
+  margin-top: 5px;
   position: fixed;
-  right: 0;
-  width: 100px;
+  right: 30px;
+  width: 50px;
   z-index: 30;
 }
 
@@ -64,6 +165,19 @@ ol {
   -ms-transform: rotate(-45deg) translate(16px, -10px);
   transform: rotate(-45deg) translate(16px, -10px);
 }
+/* --Hamburger-button Section */
+
+/* Experience Section */
+.jss92 {
+  height: 145px;
+  display: flex;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.jss93 {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
 
 /* Aside */
 aside {
@@ -71,9 +185,9 @@ aside {
   top: 0px;
   bottom: 0px;
   right: 0px;
-  width: min(70vw, 400px);
+  width: min(70vw, 500px);
   height: 100vh;
-  z-index: 10;
+  z-index: 11;
   outline: 0px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transform: translateX(100vw);

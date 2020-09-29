@@ -5,8 +5,8 @@ const Nav = (props) => {
   return (
     <header>
       <nav className={props.class}>
-        <a href="/" aria-label="home">
-          Logo
+        <a className="logo" href="/" aria-label="home">
+          R
         </a>
         <div className="main nav">
           <ul className="nav-list">
