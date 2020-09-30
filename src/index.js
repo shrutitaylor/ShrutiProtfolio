@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Aside from "../componets/main/Aside";
-import Nav from "../componets/main/Nav";
-import Intro from "../componets/main/Intro";
-import AboutMe from "../componets/main/AboutMe";
-import Experience from "../componets/main/Experience";
-import MainProject from "../componets/main/MainProject";
-import GetInTouch from "../componets/main/GetInTouch";
-import Footer from "../componets/main/Footer";
-import Fade from "react-reveal/Fade";
+import Aside from "./componets/main/Aside";
+import Nav from "./componets/main/Nav";
+import Intro from "./componets/main/Intro";
+import AboutMe from "./componets/main/AboutMe";
+import Experience from "./componets/main/Experience";
+import MainProject from "./componets/main/MainProject";
+import GetInTouch from "./componets/main/GetInTouch";
+import Footer from "./componets/main/Footer";
+import Zoom from "react-reveal/Zoom";
 
 import "./styles.css";
 
@@ -21,7 +21,6 @@ class Main extends Component {
   }
 
   handleClickOutside = (event) => {
-    console.log(this.wrapperAside);
     if (
       this.wrapperAside &&
       !this.wrapperAside.current.contains(event.target)
@@ -34,19 +33,41 @@ class Main extends Component {
     }
   };
 
+  handleResize = (event) => {
+    const windowSize = window.innerWidth;
+    if (windowSize < 700) {
+      this.setState({ menuIsOpen: false });
+    }
+    console.log(windowSize);
+  };
+
   componentDidMount() {
     document.addEventListener("mousedown", this.handleClickOutside);
+    window.addEventListener("resize", this.handleResize);
   }
 
   componentWillUnmount() {
     document.removeEventListener("mousedown", this.handleClickOutside);
+    window.removeEventListener("resize", this.handleResize);
   }
+
+  bodyOverFlow = () => {
+    console.log("bodyOverFlow");
+    console.log(this.state.menuIsOpen);
+    if (!this.state.menuIsOpen) {
+      document.body.style.overflow = "unset";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+  };
 
   toggleMenu = () => {
     this.setState({ menuIsOpen: !this.state.menuIsOpen });
+    this.bodyOverFlow();
   };
 
   render() {
+    this.bodyOverFlow();
     const menuIsOpen = this.state.menuIsOpen;
     return (
       <React.Fragment>
@@ -65,17 +86,17 @@ class Main extends Component {
         </div>
         <Aside ref={this.wrapperAside} class={menuIsOpen ? "open" : "close"} />
         <Nav />
-        <section>
-          <Fade right>
+        <section className={menuIsOpen ? "blur" : null}>
+          <Zoom>
             <Intro />
-          </Fade>
-          <Fade left>
+          </Zoom>
+          <Zoom>
             <AboutMe id="about" />
-          </Fade>
-          <Fade right>
+          </Zoom>
+          <Zoom>
             <Experience id="experience" />
-          </Fade>
-          <Fade left>
+          </Zoom>
+          <Zoom>
             <MainProject
               id="projects"
               projectLink="test"
@@ -98,10 +119,10 @@ class Main extends Component {
               technologies={["rex", "rex2", "rex3"]}
               gitHub="githubLink"
             />
-          </Fade>
-          <Fade right>
+          </Zoom>
+          <Zoom>
             <GetInTouch id="contact" />
-          </Fade>
+          </Zoom>
           <Footer />
         </section>
       </React.Fragment>
