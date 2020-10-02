@@ -38,7 +38,6 @@ class Main extends Component {
     if (windowSize < 700) {
       this.setState({ menuIsOpen: false });
     }
-    console.log(windowSize);
   };
 
   componentDidMount() {
@@ -52,8 +51,6 @@ class Main extends Component {
   }
 
   bodyOverFlow = () => {
-    console.log("bodyOverFlow");
-    console.log(this.state.menuIsOpen);
     if (!this.state.menuIsOpen) {
       document.body.style.overflow = "unset";
     } else {
