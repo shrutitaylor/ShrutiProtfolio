@@ -39,11 +39,13 @@ class Experience extends Component {
     return (
       <div className="jss92" id={this.props.id}>
         <Tabs
-          orientation="vertical"
+          orientation={this.props.orientation}
           value={value}
           onChange={this.handleChange}
           aria-label="simple tabs example"
           className="jss93"
+          variant="scrollable"
+          scrollButtons="auto"
         >
           <Tab
             label="Item One"
@@ -56,7 +58,12 @@ class Experience extends Component {
             aria-controls="vertical-tabpanel-1"
           />
           <Tab
-            label="Item Three"
+            label="Ibps Gmbh"
+            id="vertical-tab-2"
+            aria-controls="vertical-tabpanel-2"
+          />
+          <Tab
+            label="Ibps Gmbh"
             id="vertical-tab-2"
             aria-controls="vertical-tabpanel-2"
           />
@@ -69,7 +76,55 @@ class Experience extends Component {
           Content Two
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Content Three
+          <h3>
+            <span>Junior Front End Developer</span>
+            <span className="company">
+              &nbsp;@&nbsp;
+              <a
+                href="https://www.nexern.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-link"
+              >
+                Nexern Gmbh
+              </a>
+            </span>
+          </h3>
+          <p className="timeline">Jul 2016 - Mar 2018</p>
+
+          <ul className="company-jobs">
+            <li>Searched and fixed small errors in CSS.</li>
+            <li>Updated the new elements for the new content.</li>
+            <li>Using Dev Tools on Chrome and Firefox for fixing bugs.</li>
+            <li>Updated and created the new PHP scripts.</li>
+            <li>Worked closely with designers, creating great interfaces.</li>
+            <li>Worked extensively with Javascript, HTML5 and CSS3.</li>
+          </ul>
+        </TabPanel>
+
+        <TabPanel value={value} index={3}>
+          <h3>
+            <span>Junior Front-end Developer</span>
+            <span className="company">
+              &nbsp;@&nbsp;
+              <span className="inline-link">Ibps Gmbh</span>
+            </span>
+          </h3>
+          <p className="timeline">Nov 2015 - Jun 2016</p>
+
+          <ul className="company-jobs">
+            <li>
+              Creating layouts in Photoshop and turning them into working
+              websites
+            </li>
+            <li>Creating flavicon icon designs.</li>
+            <li>Using Dev Tools on Chrome and Firefox for fixing bugs.</li>
+            <li>Creating 3D effects and animations with CSS3.</li>
+            <li>
+              Manually tested sites in various browsers and mobile devices to
+              ensure responsiveness
+            </li>
+          </ul>
         </TabPanel>
       </div>
     );

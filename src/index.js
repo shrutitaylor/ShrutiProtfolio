@@ -14,10 +14,11 @@ import "./styles.css";
 
 class Main extends Component {
   constructor(props) {
+    const orientation = window.innerWidth < 700 ? "horizontal" : "vertical";
     super(props);
     this.wrapperAside = React.createRef();
     this.wrapperHamburgerButton = React.createRef();
-    this.state = { menuIsOpen: false };
+    this.state = { menuIsOpen: false, orientation: orientation };
   }
 
   handleClickOutside = (event) => {
@@ -35,8 +36,11 @@ class Main extends Component {
 
   handleResize = (event) => {
     const windowSize = window.innerWidth;
+    console.log("rex");
     if (windowSize < 700) {
-      this.setState({ menuIsOpen: false });
+      this.setState({ menuIsOpen: false, orientation: "horizontal" });
+    } else {
+      this.setState({ orientation: "vertical" });
     }
   };
 
@@ -91,7 +95,7 @@ class Main extends Component {
             <AboutMe id="about" />
           </Zoom>
           <Zoom>
-            <Experience id="experience" />
+            <Experience id="experience" orientation={this.state.orientation} />
           </Zoom>
           <Zoom>
             <MainProject

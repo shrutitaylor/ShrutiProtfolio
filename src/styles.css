@@ -208,17 +208,62 @@ header nav .nav .nav-list li:hover {
 /* --Hamburger-button Section */
 
 /* Experience Section */
-.jss92 {
-  height: 145px;
-  display: flex;
-  flex-grow: 1;
-  background-color: #fff;
+
+.MuiTabs-flexContainer {
+  border-bottom: 2px solid gray;
 }
 
-.jss93 {
-  border-right: 1px solid rgba(0, 0, 0, 0.12);
+.Mui-selected {
+  color: #64ffda;
 }
 
+.PrivateTabIndicator-colorSecondary-3 {
+  background-color: #64ffda !important;
+}
+
+@media (min-width: 700px) {
+  .jss92 {
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .jss93 {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .MuiTabs-flexContainer {
+    border-bottom: none;
+  }
+}
+
+.company {
+  color: #64ffda !important;
+}
+
+.timeline {
+  font-size: 13px;
+}
+
+.company-jobs {
+  padding: 20px 20px;
+  position: relative;
+}
+
+.company-jobs li {
+  margin-bottom: 10px;
+}
+
+.company-jobs li:before {
+  content: "▹";
+  left: 0px;
+  color: #64ffda;
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: 0px;
+}
+/* --Experience Section */
 /* Aside */
 aside {
   position: fixed;
@@ -395,31 +440,21 @@ aside .aside-content ol li:hover {
 
 .main.about_me .about_img {
   margin: 30px auto 50px;
-  width: 70%;
+  width: auto;
   background-color: #64ffda;
   position: relative;
-  max-width: 200px;
+  max-width: 250px;
   border-radius: 15px;
 }
 
 .main.about_me .about_img img {
   max-width: 100%;
+  width: 250px;
   vertical-align: middle;
   filter: grayscale(100%);
   mix-blend-mode: multiply;
   transition: opacity 500ms ease 0s;
   border-radius: 15px;
-}
-
-@media (min-width: 1000px) {
-  .main.about_me .about_img {
-    max-width: 250px;
-    width: auto;
-  }
-
-  .main.about_me .about_img img {
-    width: 250px;
-  }
 }
 
 .main.about_me .about_img:hover img {
