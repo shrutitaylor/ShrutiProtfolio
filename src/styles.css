@@ -209,12 +209,23 @@ header nav .nav .nav-list li:hover {
 
 /* Experience Section */
 
-.MuiTabs-flexContainer {
-  border-bottom: 2px solid gray;
+.experience_title {
+  padding-left: 15px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #ccd6f6;
+}
+
+.MuiTabs-vertical {
+  min-width: 150px;
 }
 
 .Mui-selected {
   color: #64ffda;
+}
+
+.MuiBox-root {
+  padding: 13px 24px 24px 24px !important;
 }
 
 .PrivateTabIndicator-colorSecondary-3 {
@@ -227,18 +238,19 @@ header nav .nav .nav-list li:hover {
     display: flex;
     flex-grow: 1;
   }
-
-  .jss93 {
-    border-right: 1px solid rgba(0, 0, 0, 0.12);
-  }
-
-  .MuiTabs-flexContainer {
-    border-bottom: none;
-  }
 }
 
 .company {
   color: #64ffda !important;
+}
+
+.company a {
+  color: #64ffda !important;
+  text-decoration: none;
+}
+
+.company a:hover {
+  text-decoration: underline;
 }
 
 .timeline {
@@ -405,7 +417,7 @@ aside .aside-content ol li:hover {
 }
 
 .main.about_me .about_title {
-  font-size: 20px;
+  font-size: 40px;
   color: #ccd6f6;
   margin-bottom: 30px;
 }
@@ -463,3 +475,68 @@ aside .aside-content ol li:hover {
 }
 
 /* --About me Section */
+
+/* Project Section */
+
+.project_title {
+  padding-left: 15px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #ccd6f6;
+}
+
+.main.main-project {
+  margin-bottom: 40px;
+}
+
+.main.main-project .img-container {
+  background-color: #64ffda;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.main.main-project .img-container img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  transition: opacity 500ms ease 0s;
+}
+
+.main.main-project .img-container:hover img {
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+.main.main-project .left-container span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.main.main-project .left-container .text-content {
+  background-color: #172a45;
+  padding: 10px;
+  margin: 15px 0px;
+  border-radius: 15px;
+}
+
+.main.main-project .left-container .technologies li {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.main.main-project .left-container h4 {
+  color: #e6f1ff;
+  font-size: 24px;
+}
+
+.main.main-project .left-container .links-feature a {
+  color: #e6f1ff;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* --Project Section */

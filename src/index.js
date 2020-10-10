@@ -10,6 +10,8 @@ import GetInTouch from "./componets/main/GetInTouch";
 import Footer from "./componets/main/Footer";
 import Zoom from "react-reveal/Zoom";
 
+import mainProject from "./img/main_project1.png";
+
 import "./styles.css";
 
 class Main extends Component {
@@ -36,7 +38,6 @@ class Main extends Component {
 
   handleResize = (event) => {
     const windowSize = window.innerWidth;
-    console.log("rex");
     if (windowSize < 700) {
       this.setState({ menuIsOpen: false, orientation: "horizontal" });
     } else {
@@ -97,28 +98,30 @@ class Main extends Component {
           <Zoom>
             <Experience id="experience" orientation={this.state.orientation} />
           </Zoom>
+
           <Zoom>
             <MainProject
+              bigTitle="Some Things I’ve Built"
               id="projects"
-              projectLink="test"
-              mainTitle="Project1"
-              secondTitle="Project2"
-              technologies={["rex", "rex2", "rex3"]}
-              gitHub="githubLink"
-            />
-            <MainProject
-              projectLink="test2"
-              mainTitle="Project2"
-              secondTitle="Project3"
-              technologies={["rex", "rex2", "rex3"]}
-              gitHub="githubLink"
-            />
-            <MainProject
-              projectLink="test4"
-              mainTitle="Project4"
-              secondTitle="Project4"
-              technologies={["rex", "rex2", "rex3"]}
-              gitHub="githubLink"
+              liveCode="https://codesandbox.io/s/mancity-0fygx"
+              projectImg={mainProject}
+              projectLink="https://0fygx.csb.app/"
+              mainTitle="Man City"
+              content="A web app for visualizing footballs matches witch is used react routes 
+              for navigate through the pages.I used react reveal for the most of the  animation,
+              website has an Admin endpoint for accessing the dashboard in the dashboard you can
+              add the games and visualize all the information about matches.
+              For the back-end I used Firebase"
+              technologies={[
+                "HTML5",
+                "CSS3",
+                "JS",
+                "Firebase",
+                "React Router",
+                "React",
+                "React-revel"
+              ]}
+              gitHub="https://github.com/DONROB3R7/man-city"
             />
           </Zoom>
           <Zoom>
