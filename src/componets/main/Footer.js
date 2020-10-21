@@ -1,4 +1,7 @@
 import React from "react";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import CodeIcon from "@material-ui/icons/Code";
 
 const Footer = () => {
   return (
@@ -7,31 +10,29 @@ const Footer = () => {
         <ul>
           <li>
             <a
-              href="https://github.com/bchiang7"
+              href="https://github.com/DONROB3R7"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <i className="github"></i>
+              <GitHubIcon style={{ fontSize: 30 }} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/costache-robert/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <LinkedInIcon style={{ fontSize: 30 }} />
             </a>
             <a
-              href="https://www.linkedin.com/feed/"
+              href="https://codesandbox.io/u/DONROB3R7/sandboxes"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <i className="linkedin"></i>
-            </a>
-            <a
-              href="https://codesandbox.io/"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
-              <i className="codesandbox"></i>
+              <CodeIcon style={{ fontSize: 30 }} />
             </a>
           </li>
         </ul>
-      </div>
-      <div className="footer-content">
-        <div>Designed &amp; Built by Robert Cel Rau</div>
       </div>
     </footer>
   );

@@ -127,7 +127,9 @@ class Main extends Component {
           <Zoom>
             <GetInTouch id="contact" />
           </Zoom>
-          <Footer />
+          <Zoom>
+            <Footer />
+          </Zoom>
         </section>
       </React.Fragment>
     );

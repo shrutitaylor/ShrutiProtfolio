@@ -21,12 +21,12 @@ const MainProject = (props) => {
   return (
     <section className="main main-project" id={props.id}>
       {bigTitle ? (
-        <div class="experience_title">
+        <div className="experience_title">
           <h3>{bigTitle}</h3>
         </div>
       ) : null}
       <a
-        class="img-container"
+        className="img-container"
         href={projectLink}
         target="_blank"
         rel="noreferrer"

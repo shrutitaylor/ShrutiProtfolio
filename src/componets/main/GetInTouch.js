@@ -2,20 +2,15 @@ import React from "react";
 
 const GetInTouch = (props) => {
   return (
-    <section className="main get-in-touch" id={props.id}>
-      <h4>Get In Touch</h4>
+    <section className="main get_in_touch" id={props.id}>
+      <div className="get_in_touche title">
+        <h3>Get in touch</h3>
+      </div>
       <p>
-        Friendship contrasted solicitude insipidity in introduced literature it.
-        He seemed denote except as oppose do spring my.
+        Whether you have a question or just want to say hi, I'll try my best to
+        get back to you!
       </p>
-      <a
-        href="random mail"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        className="onctact_button"
-      >
-        Say Hello
-      </a>
+      <a href="mailto:costache.robert.valentin@gmail.com">Say Hello</a>
     </section>
   );
 };
