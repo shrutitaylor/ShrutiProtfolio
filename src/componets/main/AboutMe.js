@@ -9,7 +9,7 @@ const AboutMe = (props) => {
         </div>
 
         <div className="about_content">
-          <p>Hello! I'm Robert, a software engineer based in Berlin.</p>
+          <p>Hello! I'm Robert, a Front-end Developer based in Berlin.</p>
           <p>
             I enjoy turning complex problems into simple solutions. When I’m not
             coding or pushing pixels into components, you’ll find me learning
@@ -20,9 +20,9 @@ const AboutMe = (props) => {
             <li>JavaScript</li>
             <li>HTML & CSS</li>
             <li>React</li>
-            <li>Vue</li>
+            <li>jQuery</li>
             <li>WordPress</li>
-            <li>Node.js</li>
+            <li>PHP</li>
           </ul>
         </div>
       </div>

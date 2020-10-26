@@ -11,7 +11,7 @@ const Intro = () => {
 
       <div className="intro_content">
         <p>
-          I'm a software engineer based in Berlin, specializing building
+          I'm a Front-end Developer based in Berlin, specializing in building
           exceptional websites, applications, and everything in between.
         </p>
       </div>

@@ -34,7 +34,7 @@ class Experience extends Component {
     return (
       <React.Fragment>
         <div className="experience_title">
-          <h3>Where I’ve Worked</h3>
+          <h3>Where I Have Worked</h3>
         </div>
 
         <div className="jss92" id={this.props.id}>
@@ -88,17 +88,17 @@ class Experience extends Component {
 
             <ul className="company-jobs">
               <li>
-                Collaborating closely with the team to support projects during
+                Collaborated closely with the team to support projects during
                 all phases of delivery.
               </li>
-              <li>Bringing mock-ups to life using HTML, CSS, JavaScript.</li>
-              <li>Working with a custom CSM</li>
+              <li>Brought mock-ups to life using HTML, CSS, JavaScript.</li>
+              <li>Worked with a custom CSM.</li>
               <li>
-                Developed and optimised a complex website using React, PHP, CSS,
-                HTML
+                Developed and optimised complex websites using React, PHP, CSS,
+                HTML.
               </li>
               <li>
-                Developed and maintained code for in-house and client websites
+                Developed and maintained code for in-house and client websites.
               </li>
             </ul>
           </TabPanel>
@@ -122,17 +122,17 @@ class Experience extends Component {
             <ul className="company-jobs">
               <li>Created user interfaces using React.</li>
               <li>
-                Used jQuery to make the HTML and CSS interact with JavaScript
-                functions in order to develop dynamic web pages.
+                Used jQuery to make the HTML and CSS interact with the
+                JavaScript functions, in order to develop dynamic web pages.
               </li>
               <li>
                 Communicated and collaborated with different departaments, from
-                designers, project managers, content writers, Seo experts; to
-                adding new Front-End features to existent websites.
+                designers, project managers, content writers, Seo experts; added
+                new Front-End features to existent websites.
               </li>
               <li>
                 Developed and optimised a complex betting calculator app with
-                over 30 differents bet types
+                over 30 different bet types.
               </li>
             </ul>
           </TabPanel>
@@ -175,12 +175,12 @@ class Experience extends Component {
 
             <ul className="company-jobs">
               <li>
-                Creating layouts in Photoshop and turning them into working
+                Created layouts in Photoshop and turned them into working
                 websites
               </li>
-              <li>Creating flavicon icon designs.</li>
-              <li>Using Dev Tools on Chrome and Firefox for fixing bugs.</li>
-              <li>Creating 3D effects and animations with CSS3.</li>
+              <li>Created flavicon icon designs.</li>
+              <li>Used Dev Tools on Chrome and Firefox for fixing bugs.</li>
+              <li>Created 3D effects and animations with CSS3.</li>
               <li>
                 Manually tested sites in various browsers and mobile devices to
                 ensure responsiveness

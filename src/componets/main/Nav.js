@@ -59,7 +59,11 @@ const Nav = (props) => {
               </Link>
             </li>
           </ul>
-          <a className="resume" href="/resume">
+          <a
+            className="resume"
+            target="_blank"
+            href="/static/cv/Costache%20Robert%20Cv.pdf"
+          >
             Resume
           </a>
         </div>

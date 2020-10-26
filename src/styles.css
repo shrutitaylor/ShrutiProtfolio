@@ -232,6 +232,10 @@ header nav .nav .nav-list li:hover {
   background-color: #64ffda !important;
 }
 
+.MuiTabs-indicator.jss4 {
+  background-color: #64ffda !important;
+}
+
 @media (min-width: 700px) {
   .jss92 {
     height: auto;
@@ -313,10 +317,12 @@ aside .aside-content ol li {
   font-family: Roboto;
   text-align: center;
   margin-bottom: 60px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 aside .aside-content ol li:hover {
   cursor: pointer;
+  color: #64ffda;
 }
 /* --Aside */
 

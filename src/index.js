@@ -11,6 +11,7 @@ import Footer from "./componets/main/Footer";
 import Zoom from "react-reveal/Zoom";
 
 import mainProject from "./img/main_project1.png";
+import mainProject2 from "./img/main_project2.JPG";
 
 import "./styles.css";
 
@@ -101,17 +102,17 @@ class Main extends Component {
 
           <Zoom>
             <MainProject
-              bigTitle="Some Things I’ve Built"
+              bigTitle="Some Things I have Built"
               id="projects"
               liveCode="https://codesandbox.io/s/mancity-0fygx"
               projectImg={mainProject}
               projectLink="https://0fygx.csb.app/"
               mainTitle="Man City"
-              content="A web app for visualizing footballs matches witch is used react routes 
-              for navigate through the pages.I used react reveal for the most of the  animation,
-              website has an Admin endpoint for accessing the dashboard in the dashboard you can
-              add the games and visualize all the information about matches.
-              For the back-end I used Firebase"
+              content="A web app for visualizing football matches which is using react routes 
+              to navigate through the pages. I used react reveal for most of the animation.
+              The website has an Admin endpoint for accessing the dashboard. In the dashboard, you can
+              add the games and visualize all the information about the matches.
+              For the back-end I used Firebase, for example for the authentification and for storing the information about the matches."
               technologies={[
                 "HTML5",
                 "CSS3",
@@ -122,6 +123,27 @@ class Main extends Component {
                 "React-revel"
               ]}
               gitHub="https://github.com/DONROB3R7/man-city"
+            />
+
+            <MainProject
+              id="projects"
+              liveCode="https://codesandbox.io/s/thevenue-y49si"
+              projectImg={mainProject2}
+              projectLink="https://y49si.csb.app/"
+              mainTitle="The Venue"
+              content="Created a full web page application, with a carousel and countdown timer. Used 
+              material-ui to create the website functionality like ToolBar, AppBar, Buttton, Drawer, 
+              ListItem. Used react-reveal to add animation such as: Fade,Flip,Rotate,Zoom."
+              technologies={[
+                "HTML5",
+                "CSS3",
+                "JS",
+                "Material-Ui",
+                "React",
+                "React-revel",
+                "React-scroll,"
+              ]}
+              gitHub="https://github.com/DONROB3R7/The-Venue"
             />
           </Zoom>
           <Zoom>
