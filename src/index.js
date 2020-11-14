@@ -12,6 +12,9 @@ import Zoom from "react-reveal/Zoom";
 
 import mainProject from "./img/main_project1.png";
 import mainProject2 from "./img/main_project2.JPG";
+import mainProject3 from "./img/main_project3.png";
+import mainProject4 from "./img/main_project4.JPG";
+import mainProject5 from "./img/main_project5.PNG";
 
 import "./styles.css";
 
@@ -144,6 +147,57 @@ class Main extends Component {
                 "React-scroll,"
               ]}
               gitHub="https://github.com/DONROB3R7/The-Venue"
+            />
+
+            <MainProject
+              id="projects"
+              liveCode="https://codesandbox.io/s/coding-challenges-react-tyxy6"
+              projectImg={mainProject3}
+              projectLink="https://tyxy6.csb.app/"
+              mainTitle="Coding Challenges in React"
+              content="Implemented and solved the most popular code challenges in 
+              JavaScript such as Fizz Buzz, Harmless Ransom, Palindrome, 
+              Caesar Cipher, Reverse Words, Reverse Array, Two Sum, Fibonacci,
+               Memoized Fibonacci, Mean Median Mode, Mean Median Mode, Binary Search, 
+               Sieve of Eratosthenes, Bubble Sort, Merge Sort, Max Stock Profit."
+              technologies={["HTML5", "CSS3", "JS", "React"]}
+              gitHub="https://github.com/DONROB3R7/Algorithms-React"
+            />
+
+            <MainProject
+              id="projects"
+              liveCode="https://codesandbox.io/s/9op5okpyrw?file=/src/index.js"
+              projectImg={mainProject4}
+              projectLink="https://9op5okpyrw.csb.app/"
+              mainTitle="Show My Location App"
+              content="Implemented a web application that gets the current location 
+              and the location information, such as: City, Region, Currency, 
+              Ip, Google location. To get all this information, I used a free 
+              Api which returns all the information via JSON."
+              technologies={["HTML5", "CSS3", "JS", "React", "Api"]}
+              gitHub="https://github.com/DONROB3R7/Show_my_location"
+            />
+
+            <MainProject
+              id="projects"
+              liveCode="https://codesandbox.io/s/firebasegallery-ur073"
+              projectImg={mainProject5}
+              projectLink="https://ur073.csb.app/"
+              mainTitle="Firebase Gallery"
+              content="Cretead a web application that allow to upload images
+              on the firebase storage and display in css grid on the front end. To order
+              images, I using time server for firebase and for the box nimation, I used 
+              frame-motion.
+              "
+              technologies={[
+                "HTML5",
+                "CSS3",
+                "JS",
+                "React",
+                "Frame-Motion",
+                "Firebase"
+              ]}
+              gitHub="https://github.com/DONROB3R7/firebase_gallery"
             />
           </Zoom>
           <Zoom>
