@@ -29,10 +29,7 @@ const AboutMe = (props) => {
       <div className="about_me right">
         <div className="about_img">
           <picture>
-            <img
-              src="https://media-exp1.licdn.com/dms/image/C5603AQEHUvKC_aYXOQ/profile-displayphoto-shrink_200_200/0?e=1606953600&v=beta&t=TiRLx3xv8i6hxwSz4yVa2w1qva5t_Xv4e5bJMOsH90I"
-              alt="rex"
-            />
+            <img src={props.img} alt="about_me" />
           </picture>
         </div>
       </div>

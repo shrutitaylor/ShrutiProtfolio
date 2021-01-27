@@ -10,6 +10,8 @@ import GetInTouch from "./componets/main/GetInTouch";
 import Footer from "./componets/main/Footer";
 import Zoom from "react-reveal/Zoom";
 
+// Images
+import AboutMeImg from "./img/About_me.jpg";
 import mainProject from "./img/main_project1.png";
 import mainProject2 from "./img/main_project2.JPG";
 import mainProject3 from "./img/main_project3.png";
@@ -97,7 +99,7 @@ class Main extends Component {
             <Intro />
           </Zoom>
           <Zoom>
-            <AboutMe id="about" />
+            <AboutMe id="about" img={AboutMeImg} />
           </Zoom>
           <Zoom>
             <Experience id="experience" orientation={this.state.orientation} />
@@ -184,10 +186,10 @@ class Main extends Component {
               projectImg={mainProject5}
               projectLink="https://ur073.csb.app/"
               mainTitle="Firebase Gallery"
-              content="Cretead a web application that allow to upload images
-              on the firebase storage and display in css grid on the front end. To order
-              images, I using time server for firebase and for the box nimation, I used 
-              frame-motion.
+              content="Created a web application that allows you to upload images
+              on the firebase storage and display then in the css grid on the front end. 
+              To order the images, I used the time server for firebase and for the box 
+              animation, I used the frame-motion.
               "
               technologies={[
                 "HTML5",
