@@ -20,9 +20,9 @@
 
 /* General Css rules */
 body {
-  background-color: #020c1b;
-  font-family: "Roboto Mono", monospace;
-  color: #8892b0;
+  background-color: #292929;
+  font-family: "Space Grotesk", sans-serif;
+  color: #7ac9ed;
   font-weight: 400;
 }
 
@@ -67,8 +67,9 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-color: rgba(10, 25, 47, 1);
-  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  /* background-color: rgba(10, 25, 47, 1); */
+  /* box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7); */
+  background: transparent;
   font-size: 14px;
 }
 
@@ -78,16 +79,18 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 header nav .logo {
   display: inline-block;
-  color: #64ffda;
+  /* color: #64ffda; */
   text-decoration: none;
-  font-size: 30px;
-  border: 1px solid #64ffda;
+  /* font-size: 30px; */
+  
+  /* border: 1px solid #64ffda; */
   border-radius: 20%;
-  padding: 5px 15px;
+  
   margin-right: 30px;
 }
 
@@ -102,9 +105,9 @@ header nav .nav a {
 }
 
 header nav .nav .resume {
-  color: #64ffda;
+  color: #7ac9ed;
   background-color: transparent;
-  border: 1px solid #64ffda;
+  border: 1px solid #7ac9ed;
   padding: 10px 15px;
   border-radius: 5px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -122,7 +125,7 @@ header nav .nav .resume:hover {
 
 header nav .nav a:hover {
   cursor: pointer;
-  color: #64ffda;
+  color: #7ac9ed;
 }
 
 header nav .nav .nav-list {
@@ -142,7 +145,7 @@ header nav .nav .nav-list li {
 
 header nav .nav .nav-list li:hover {
   cursor: pointer;
-  color: #64ffda;
+  color: #7ac9ed;
 }
 
 /* -- HEADER */
@@ -173,7 +176,7 @@ header nav .nav .nav-list li:hover {
 .hamburger-button li {
   height: 4px;
   margin: 8px auto;
-  background-color: #64ffda;
+  background-color: #7ac9ed;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -213,7 +216,7 @@ header nav .nav .nav-list li:hover {
   padding-left: 15px;
   margin-bottom: 30px;
   font-size: 40px;
-  color: #ccd6f6;
+  color: #FFED77;
 }
 
 .MuiTabs-vertical {
@@ -221,7 +224,7 @@ header nav .nav .nav-list li:hover {
 }
 
 .Mui-selected {
-  color: #64ffda;
+  color: #7ac9ed;
 }
 
 .MuiBox-root {
@@ -229,11 +232,11 @@ header nav .nav .nav-list li:hover {
 }
 
 .PrivateTabIndicator-colorSecondary-3 {
-  background-color: #64ffda !important;
+  background-color: #7ac9ed !important;
 }
 
 .MuiTabs-indicator.jss4 {
-  background-color: #64ffda !important;
+  background-color: #7ac9ed !important;
 }
 
 @media (min-width: 700px) {
@@ -245,11 +248,11 @@ header nav .nav .nav-list li:hover {
 }
 
 .company {
-  color: #64ffda !important;
+  color: #7ac9ed !important;
 }
 
 .company a {
-  color: #64ffda !important;
+  color: #7ac9ed !important;
   text-decoration: none;
 }
 
@@ -273,7 +276,7 @@ header nav .nav .nav-list li:hover {
 .company-jobs li:before {
   content: "▹";
   left: 0px;
-  color: #64ffda;
+  color: #7ac9ed;
   font-size: 20px;
   line-height: 20px;
   position: absolute;
@@ -312,7 +315,7 @@ aside .aside-content ol {
 }
 
 aside .aside-content ol li {
-  color: #ccd6f6;
+  color: #FFED77;
   font-size: 25px;
   font-family: Roboto;
   text-align: center;
@@ -322,13 +325,13 @@ aside .aside-content ol li {
 
 aside .aside-content ol li:hover {
   cursor: pointer;
-  color: #64ffda;
+  color: #7ac9ed;
 }
 
 aside .aside-content ol li .resume {
-  color: #64ffda;
+  color: #7ac9ed;
   background-color: transparent;
-  border: 1px solid #64ffda;
+  border: 1px solid #7ac9ed;
   padding: 10px 25px;
   border-radius: 5px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -346,40 +349,45 @@ aside .aside-content ol li .resume:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   min-height: 100vh;
+  margin-top: 50px;
 }
 
 .main.intro .intro_section h1 {
   color: red;
   font-weight: 400;
-  color: #64ffda;
+  color: #7ac9ed;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .main.intro .intro_section h2 {
-  font-size: 35px;
-  color: #ccd6f6;
-  margin-bottom: 10px;
+  font-size: 136px;
+  color: #B3D9F1;
+  
+  text-align: center;
 }
 
 .main.intro .intro_section h3 {
-  color: #8892b0;
-  font-size: 35px;
+  color: #4796B4;
+  font-size: 24px;
   font-weight: 600;
   line-height: 0.95;
-  margin-bottom: 30px;
+  
+  text-align: center;
 }
 
 .main.intro .intro_content {
   margin-bottom: 45px;
   max-width: 500px;
+  text-align: center;
 }
 
 .main.intro .intro_cta {
   margin-bottom: 45px;
   background-color: transparent;
-  border: 1px solid #64ffda;
+  border: 1px solid #7ac9ed;
   padding: 20px 25px;
   border-radius: 5px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -387,7 +395,7 @@ aside .aside-content ol li .resume:hover {
 }
 
 .main.intro .intro_cta a {
-  color: #64ffda;
+  color: #7ac9ed;
   text-decoration: none;
 }
 
@@ -396,9 +404,9 @@ aside .aside-content ol li .resume:hover {
   cursor: pointer;
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 1800px) {
   .main.intro .intro_section h2 {
-    font-size: 45px;
+    font-size: 136px;
   }
 }
 
@@ -409,7 +417,7 @@ aside .aside-content ol li .resume:hover {
   .main.intro .intro_section h3 {
     font-size: 50px;
   }
-}
+} */
 
 /* --Intro Section */
 
@@ -438,7 +446,7 @@ aside .aside-content ol li .resume:hover {
 
 .main.about_me .about_title {
   font-size: 40px;
-  color: #ccd6f6;
+  color: #FFED77;
   margin-bottom: 30px;
 }
 
@@ -464,7 +472,7 @@ aside .aside-content ol li .resume:hover {
 .main.about_me .about_content ul li:before {
   content: "▹";
   left: 0px;
-  color: #64ffda;
+  color: #7ac9ed;
   font-size: 20px;
   line-height: 12px;
   padding-right: 5px;
@@ -473,7 +481,7 @@ aside .aside-content ol li .resume:hover {
 .main.about_me .about_img {
   margin: 30px auto 50px;
   width: auto;
-  background-color: #64ffda;
+  background-color: #7ac9ed;
   position: relative;
   max-width: 250px;
   border-radius: 15px;
@@ -502,7 +510,7 @@ aside .aside-content ol li .resume:hover {
   padding-left: 15px;
   margin-bottom: 30px;
   font-size: 40px;
-  color: #ccd6f6;
+  color: #FFED77;
 }
 
 .main.main-project {
@@ -510,7 +518,7 @@ aside .aside-content ol li .resume:hover {
 }
 
 .main.main-project .img-container {
-  background-color: #64ffda;
+  background-color: #7ac9ed;
   margin-bottom: 20px;
   display: block;
 }
@@ -579,12 +587,12 @@ aside .aside-content ol li .resume:hover {
 .main.get_in_touch a {
   margin-bottom: 45px;
   background-color: transparent;
-  border: 1px solid #64ffda;
+  border: 1px solid #7ac9ed;
   padding: 20px 25px;
   border-radius: 5px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   font-size: 15px;
-  color: #64ffda;
+  color: #7ac9ed;
   text-decoration: none;
   margin: 20px auto;
   text-align: center;

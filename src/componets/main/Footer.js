@@ -1,7 +1,7 @@
-import React from "react";
+import CodeIcon from "@material-ui/icons/Code";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import CodeIcon from "@material-ui/icons/Code";
+import React from "react";
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/costache-robert/"
+              href="https://www.linkedin.com/in/shruti-ms/"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >

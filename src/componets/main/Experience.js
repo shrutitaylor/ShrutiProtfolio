@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
+import Tab from "@material-ui/core/Tab";
+import Tabs from "@material-ui/core/Tabs";
+import React, { Component } from "react";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -46,6 +46,7 @@ class Experience extends Component {
             className="jss93"
             variant="scrollable"
             scrollButtons="auto"
+            sx={{ borderRight: 1, borderColor: '#B3D9F1', borderWidth:'100px' }}
           >
             <Tab
               label="Freaks4U GmbH"
@@ -80,11 +81,11 @@ class Experience extends Component {
                   rel="noreferrer"
                   className="inline-link"
                 >
-                  Freaks4U
+                  BrandOPCSoultions
                 </a>
               </span>
             </h3>
-            <p className="timeline">Apr 2018 - Dec 2019</p>
+            <p className="timeline">Oct 2023 - Jan 2024</p>
 
             <ul className="company-jobs">
               <li>
@@ -113,11 +114,11 @@ class Experience extends Component {
                   rel="noreferrer"
                   className="inline-link"
                 >
-                  Nexern Gmbh
+                  Ford Credit "(IT)"
                 </a>
               </span>
             </h3>
-            <p className="timeline">Apr 2018 - Oct 2019</p>
+            <p className="timeline">Sep 2021 - Jan 2023</p>
 
             <ul className="company-jobs">
               <li>Created user interfaces using React.</li>
@@ -147,11 +148,11 @@ class Experience extends Component {
                   rel="noreferrer"
                   className="inline-link"
                 >
-                  Nexern Gmbh
+                  Ford Credit "(IT)"
                 </a>
               </span>
             </h3>
-            <p className="timeline">Jul 2016 - Mar 2018</p>
+            <p className="timeline">Sep 2021 - Jan 2023</p>
 
             <ul className="company-jobs">
               <li>Searched and fixed small errors in CSS.</li>

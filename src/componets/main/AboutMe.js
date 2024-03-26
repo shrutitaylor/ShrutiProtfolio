@@ -9,7 +9,7 @@ const AboutMe = (props) => {
         </div>
 
         <div className="about_content">
-          <p>Hello! I'm Robert, a Front-end Developer based in Berlin.</p>
+          <p>Hello! I'm Shruti, a Front-end Developer based in Melbourne.</p>
           <p>
             I enjoy turning complex problems into simple solutions. When I’m not
             coding or pushing pixels into components, you’ll find me learning

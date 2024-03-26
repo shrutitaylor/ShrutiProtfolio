@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Aside from "./componets/main/Aside";
-import Nav from "./componets/main/Nav";
-import Intro from "./componets/main/Intro";
-import AboutMe from "./componets/main/AboutMe";
-import Experience from "./componets/main/Experience";
-import MainProject from "./componets/main/MainProject";
-import GetInTouch from "./componets/main/GetInTouch";
-import Footer from "./componets/main/Footer";
 import Zoom from "react-reveal/Zoom";
+import AboutMe from "./componets/main/AboutMe";
+import Aside from "./componets/main/Aside";
+import Experience from "./componets/main/Experience";
+import Footer from "./componets/main/Footer";
+import GetInTouch from "./componets/main/GetInTouch";
+import Intro from "./componets/main/Intro";
+import MainProject from "./componets/main/MainProject";
+import Nav from "./componets/main/Nav";
 
 // Images
-import AboutMeImg from "./img/About_me.jpg";
 import mainProject from "./img/main_project1.png";
 import mainProject2 from "./img/main_project2.JPG";
 import mainProject3 from "./img/main_project3.png";
 import mainProject4 from "./img/main_project4.JPG";
 import mainProject5 from "./img/main_project5.PNG";
+import AboutMeImg from "./img/shrutidp.jpg";
 
 import "./styles.css";
 

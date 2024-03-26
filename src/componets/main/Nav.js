@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
-
+import logo from "./shruti-logo-nobg.png";
 const Nav = (props) => {
   return (
     <header>
       <nav className={props.class}>
-        <a className="logo" href="/" aria-label="home">
-          R
-        </a>
+        <a className="logo" href="/" aria-label="home"><img width={'100px'} src={logo} alt="logo" /></a>
         <div className="main nav">
           <ul className="nav-list">
             <li>
